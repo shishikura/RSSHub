@@ -61,6 +61,7 @@
         "worker-test": "npm run build:routes && npm run worker-build && vitest run lib/worker.test.ts"
     },
     "dependencies": {
+          "htmlparser2": "9.1.0",
         "@bbob/html": "4.4.1",
         "@bbob/plugin-helper": "4.4.1",
         "@bbob/preset-html5": "4.4.1",
@@ -124,7 +125,7 @@
         "re2js": "2.8.6",
         "rfc4648": "1.5.4",
         "rss-parser": "3.13.0",
-        "sanitize-html": "2.18.0",
+        "sanitize-html": "2.13.0",
         "simplecc-wasm": "1.1.1",
         "sm-crypto-v2": "1.15.1",
         "socks-proxy-agent": "10.1.0",
@@ -235,9 +236,7 @@
             "wrangler"
         ],
         "overrides": {
-            "htmlparser2": "9.1.0",
-            "sanitize-html": "2.13.0",
-            "difflib": "https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed",
+            "difflib": "https://github.com",
             "es-set-tostringtag": "npm:@nolyfill/es-set-tostringtag@^1",
             "google-play-scraper>got": "^14.6.4",
             "google-play-scraper>ramda": "^0.32.0",
@@ -249,6 +248,8 @@
             "safer-buffer": "npm:@nolyfill/safer-buffer@^1",
             "side-channel": "npm:@nolyfill/side-channel@^1"
         },
+
+      
         "patchedDependencies": {
             "rss-parser@3.13.0": "patches/rss-parser@3.13.0.patch",
             "teleproto@1.229.0": "patches/teleproto@1.229.0.patch"
